@@ -1,5 +1,7 @@
 <h1>Listing tasks</h1>
-
+<br />
+<b><%= "Hoşgeldin #{@ad}" %></b>
+<br /><br />
 <table>
   <thead>
     <tr>
@@ -13,7 +15,7 @@
   <tbody>
     <% @tasks.each do |task| %>
       <tr>
-        <td><%= task.gorev %></td>
+		<td><%= task.gorev %></td>
         <td><%= task.aciklama %></td>
         <td><%= task.tamamlandi %></td>
         <td><%= link_to 'Show', task %></td>

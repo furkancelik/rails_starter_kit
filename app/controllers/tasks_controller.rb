@@ -4,6 +4,8 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
+	
+	@ad = "furkan"
     @tasks = Task.all
   end
 
